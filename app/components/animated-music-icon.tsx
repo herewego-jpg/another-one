@@ -24,7 +24,7 @@ export function AnimatedMusicIcon({
   className = "",
   size = 48,
   color = "white",
-  interval = 1500,
+  interval = 1000,
 }: AnimatedMusicIconProps) {
   const [currentIcon, setCurrentIcon] = useState(0)
   const [position, setPosition] = useState(0)
@@ -61,7 +61,7 @@ export function AnimatedMusicIcon({
           return nextPos
         })
         setIsVisible(true)
-      }, 100)
+      }, 80)
     }, interval)
 
     return () => clearInterval(timer)
