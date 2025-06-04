@@ -4,6 +4,7 @@ import { Navigation } from "./components/navigation"
 import { ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { AnimatedMusicIcon } from "./components/animated-music-icon"
 
 const projects = [
   {
@@ -194,6 +195,11 @@ export default function Home() {
           <p className="text-lg sm:text-xl md:text-2xl text-gray-100 max-w-2xl mx-auto leading-relaxed">
             Creating music experiences that elevate visual storytelling
           </p>
+
+          {/* Animated Music Icon */}
+          <div className="mt-8 md:mt-12">
+            <AnimatedMusicIcon size={64} />
+          </div>
         </div>
 
         {/* Scroll indicator */}

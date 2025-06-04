@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Section } from "../components/section"
 import { ChevronDown } from "lucide-react"
+import { AnimatedMusicIcon } from "../components/animated-music-icon"
 
 export default function ContactPage() {
   return (
@@ -23,6 +24,11 @@ export default function ContactPage() {
           <p className="text-lg sm:text-xl md:text-2xl text-gray-100 max-w-2xl mx-auto leading-relaxed">
             Let's create something extraordinary together
           </p>
+
+          {/* Animated Music Icon */}
+          <div className="mt-8 md:mt-12">
+            <AnimatedMusicIcon size={64} />
+          </div>
         </div>
         {/* Scroll indicator */}
         <div className="absolute bottom-12 w-full flex justify-center">

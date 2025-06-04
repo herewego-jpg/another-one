@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import Link from "next/link"
 import { ChevronDown } from "lucide-react"
+import { AnimatedMusicIcon } from "../components/animated-music-icon"
 
 export default function ServicesPage() {
   const services = [
@@ -54,6 +55,11 @@ export default function ServicesPage() {
           <p className="text-lg sm:text-xl md:text-2xl text-gray-100 max-w-2xl mx-auto leading-relaxed">
             Comprehensive audio solutions for every project
           </p>
+
+          {/* Animated Music Icon */}
+          <div className="mt-8 md:mt-12">
+            <AnimatedMusicIcon size={64} />
+          </div>
         </div>
         {/* Scroll indicator */}
         <div className="absolute bottom-12 w-full flex justify-center">

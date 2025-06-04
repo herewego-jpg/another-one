@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
 import { ChevronDown } from "lucide-react"
+import { AnimatedMusicIcon } from "../components/animated-music-icon"
 
 export default function AboutPage() {
   return (
@@ -19,6 +20,11 @@ export default function AboutPage() {
           <p className="text-lg sm:text-xl md:text-2xl text-gray-100 max-w-2xl mx-auto leading-relaxed">
             Crafting sonic narratives that connect with audiences
           </p>
+
+          {/* Animated Music Icon */}
+          <div className="mt-8 md:mt-12">
+            <AnimatedMusicIcon size={64} />
+          </div>
         </div>
         {/* Scroll indicator */}
         <div className="absolute bottom-12 w-full flex justify-center">
