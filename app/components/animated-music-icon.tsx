@@ -29,8 +29,9 @@ export function AnimatedMusicIcon({
   const [currentIcon, setCurrentIcon] = useState(0)
   const [position, setPosition] = useState(0)
   const [isVisible, setIsVisible] = useState(true)
+  const [iconOrder, setIconOrder] = useState([0, 1, 2, 3, 4, 5, 6, 7, 8])
 
-  const icons = [
+  const iconComponents = [
     <Music key="music" size={size} color={color} strokeWidth={1.5} />,
     <Headphones key="headphones" size={size} color={color} strokeWidth={1.5} />,
     <Mic key="mic" size={size} color={color} strokeWidth={1.5} />,
@@ -43,8 +44,18 @@ export function AnimatedMusicIcon({
   ]
 
   // Use the number of icons to determine positions, ensuring full screen coverage
-  const totalPositions = icons.length
+  const totalPositions = iconComponents.length
   const stepSize = 100 / (totalPositions - 1) // This ensures we go from 0% to 100%
+
+  // Shuffle array function
+  const shuffleArray = (array: number[]) => {
+    const newArray = [...array]
+    for (let i = newArray.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1))
+      ;[newArray[i], newArray[j]] = [newArray[j], newArray[i]]
+    }
+    return newArray
+  }
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -53,19 +64,31 @@ export function AnimatedMusicIcon({
 
       // After a short delay, change the icon and position, then make it reappear
       setTimeout(() => {
-        setCurrentIcon((prev) => (prev + 1) % icons.length)
+        setCurrentIcon((prev) => (prev + 1) % iconComponents.length)
+
+        // Update position
         setPosition((prevPos) => {
           // Calculate next position based on current icon index
-          const currentIconIndex = (currentIcon + 1) % icons.length
-          const nextPos = currentIconIndex * stepSize
+          const nextIconIndex = (currentIcon + 1) % iconComponents.length
+          const nextPos = nextIconIndex * stepSize
+
+          // If we're at the end of the cycle, shuffle the icon order for next round
+          if (nextIconIndex === 0) {
+            setIconOrder(shuffleArray(iconOrder))
+          }
+
           return nextPos
         })
+
         setIsVisible(true)
       }, 60)
     }, interval)
 
     return () => clearInterval(timer)
-  }, [interval, icons.length, stepSize, currentIcon])
+  }, [interval, iconComponents.length, stepSize, currentIcon, iconOrder])
+
+  // Get the current icon based on the shuffled order
+  const currentIconComponent = iconComponents[iconOrder[currentIcon]]
 
   return (
     <div className="relative w-full max-w-full mx-auto h-16 flex items-center px-4">
@@ -78,7 +101,7 @@ export function AnimatedMusicIcon({
           transition: "opacity 0.06s ease-in-out",
         }}
       >
-        {icons[currentIcon]}
+        {currentIconComponent}
       </div>
     </div>
   )
