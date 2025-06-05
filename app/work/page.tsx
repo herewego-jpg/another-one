@@ -2,6 +2,7 @@ import { Navigation } from "../components/navigation"
 import { Card, CardContent } from "@/components/ui/card"
 import { MediaEmbed } from "../components/media-embed"
 import { ChevronDown } from "lucide-react"
+import { AnimatedMusicIcon } from "../components/animated-music-icon"
 
 const projects = [
   {
@@ -40,6 +41,11 @@ export default function WorkPage() {
           <p className="text-lg sm:text-xl md:text-2xl text-gray-100 max-w-2xl mx-auto leading-relaxed">
             Featured projects and collaborations
           </p>
+
+          {/* Animated Music Icon */}
+          <div className="mt-8 md:mt-12">
+            <AnimatedMusicIcon size={64} />
+          </div>
         </div>
         {/* Scroll indicator */}
         <div className="absolute bottom-12 w-full flex justify-center">

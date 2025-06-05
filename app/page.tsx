@@ -4,6 +4,7 @@ import { Navigation } from "./components/navigation"
 import { ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { AnimatedMusicIcon } from "./components/animated-music-icon"
 
 const projects = [
   {
@@ -174,6 +175,33 @@ const projects = [
   },
 ]
 
+// Generate random icon for this page's OG image
+const musicIcons = ["music", "headphones", "mic", "radio", "volume", "waveform"]
+const randomIcon = musicIcons[Math.floor(Math.random() * musicIcons.length)]
+
+export const metadata = {
+  title: "Emily Rose Weinstein - Music Supervisor & Producer",
+  description: "Creating music experiences that elevate visual storytelling across all media formats.",
+  openGraph: {
+    title: "Emily Rose Weinstein - Music Supervisor & Producer",
+    description: "Creating music experiences that elevate visual storytelling across all media formats.",
+    images: [
+      {
+        url: `/api/og?icon=${randomIcon}`,
+        width: 1200,
+        height: 630,
+        alt: "Emily Rose Weinstein - Music Supervisor & Producer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Emily Rose Weinstein - Music Supervisor & Producer",
+    description: "Creating music experiences that elevate visual storytelling across all media formats.",
+    images: [`/api/og?icon=${randomIcon}`],
+  },
+}
+
 export default function Home() {
   return (
     <div className="min-h-screen">
@@ -194,6 +222,11 @@ export default function Home() {
           <p className="text-lg sm:text-xl md:text-2xl text-gray-100 max-w-2xl mx-auto leading-relaxed">
             Creating music experiences that elevate visual storytelling
           </p>
+
+          {/* Animated Music Icon */}
+          <div className="mt-8 md:mt-12">
+            <AnimatedMusicIcon size={64} />
+          </div>
         </div>
 
         {/* Scroll indicator */}
