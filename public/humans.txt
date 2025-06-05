@@ -1,0 +1,11 @@
+/* TEAM */
+Developer: Emily Rose Weinstein
+Contact: hello [at] emilyroseweinstein.com
+Location: Los Angeles, CA
+
+/* SITE */
+Last update: 2024/12/06
+Language: English
+Doctype: HTML5
+IDE: VS Code
+Technologies: Next.js, React, TypeScript, Tailwind CSS

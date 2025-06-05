@@ -7,6 +7,26 @@ import { Section } from "../components/section"
 import { ChevronDown } from "lucide-react"
 import { AnimatedMusicIcon } from "../components/animated-music-icon"
 
+export const metadata = {
+  title: "Contact Emily Rose Weinstein - Music Supervisor & Producer",
+  description:
+    "Get in touch with Emily Rose Weinstein for music supervision, original scoring, and audio post-production services. Based in Los Angeles, available for remote collaboration worldwide.",
+  openGraph: {
+    title: "Contact Emily Rose Weinstein - Music Supervisor & Producer",
+    description:
+      "Get in touch with Emily Rose Weinstein for music supervision, original scoring, and audio post-production services.",
+    url: "https://emilyroseweinstein.com/contact",
+  },
+  twitter: {
+    title: "Contact Emily Rose Weinstein - Music Supervisor & Producer",
+    description:
+      "Get in touch for music supervision and production services. Los Angeles-based, worldwide collaboration.",
+  },
+  alternates: {
+    canonical: "https://emilyroseweinstein.com/contact",
+  },
+}
+
 export default function ContactPage() {
   return (
     <div className="min-h-screen">

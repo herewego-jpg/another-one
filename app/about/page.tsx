@@ -5,6 +5,26 @@ import Image from "next/image"
 import { ChevronDown } from "lucide-react"
 import { AnimatedMusicIcon } from "../components/animated-music-icon"
 
+export const metadata = {
+  title: "About Emily Rose Weinstein - Music Supervisor & Producer",
+  description:
+    "Learn about Emily Rose Weinstein, a Los Angeles-based Music Supervisor & Producer with over a decade of experience working with major brands like Apple, Netflix, Tinder, and more.",
+  openGraph: {
+    title: "About Emily Rose Weinstein - Music Supervisor & Producer",
+    description:
+      "Learn about Emily Rose Weinstein, a Los Angeles-based Music Supervisor & Producer with over a decade of experience working with major brands like Apple, Netflix, Tinder, and more.",
+    url: "https://emilyroseweinstein.com/about",
+  },
+  twitter: {
+    title: "About Emily Rose Weinstein - Music Supervisor & Producer",
+    description:
+      "Learn about Emily Rose Weinstein, a Los Angeles-based Music Supervisor & Producer with over a decade of experience.",
+  },
+  alternates: {
+    canonical: "https://emilyroseweinstein.com/about",
+  },
+}
+
 export default function AboutPage() {
   return (
     <div className="min-h-screen">
@@ -55,10 +75,11 @@ export default function AboutPage() {
             <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-full overflow-hidden shadow-2xl">
               <Image
                 src="/images/emily-latest-photo.jpg"
-                alt="Emily Rose Weinstein"
+                alt="Emily Rose Weinstein - Music Supervisor & Producer"
                 fill
                 className="object-cover"
                 style={{ objectPosition: "center 10%" }}
+                priority
               />
             </div>
           </div>
