@@ -21,13 +21,17 @@ export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url)
 
-    // Always generate a random icon (ignore any icon parameter to ensure freshness)
-    const randomIndex = Math.floor(Math.random() * iconNames.length)
-    const iconName = iconNames[randomIndex]
+    // Get icon parameter or use random
+    let iconName = searchParams.get("icon") as keyof typeof musicIcons
+
+    // If no icon specified or invalid icon, pick random
+    if (!iconName || !musicIcons[iconName]) {
+      iconName = iconNames[Math.floor(Math.random() * iconNames.length)]
+    }
+
     const iconPath = musicIcons[iconName]
 
-    // Add cache-busting headers to ensure fresh generation
-    const response = new ImageResponse(
+    return new ImageResponse(
       <div
         style={{
           height: "100%",
@@ -55,20 +59,8 @@ export async function GET(request: NextRequest) {
       {
         width: 1200,
         height: 630,
-        headers: {
-          "Cache-Control": "no-cache, no-store, must-revalidate",
-          Pragma: "no-cache",
-          Expires: "0",
-        },
       },
     )
-
-    // Set cache-busting headers
-    response.headers.set("Cache-Control", "no-cache, no-store, must-revalidate")
-    response.headers.set("Pragma", "no-cache")
-    response.headers.set("Expires", "0")
-
-    return response
   } catch (e: any) {
     console.log(`${e.message}`)
     return new Response(`Failed to generate the image`, {

@@ -43,9 +43,9 @@ export function AnimatedMusicIcon({
     <Music4 key="music4" size={size} color={color} strokeWidth={1.5} />,
   ]
 
-  // Use the number of icons to determine positions, ensuring full screen coverage with safe margins
+  // Use the number of icons to determine positions, ensuring full screen coverage
   const totalPositions = iconComponents.length
-  const stepSize = 80 / (totalPositions - 1) // Use 80% width instead of 100% to prevent cutoff
+  const stepSize = 100 / (totalPositions - 1) // This ensures we go from 0% to 100%
 
   // Shuffle array function
   const shuffleArray = (array: number[]) => {
@@ -70,7 +70,7 @@ export function AnimatedMusicIcon({
         setPosition((prevPos) => {
           // Calculate next position based on current icon index
           const nextIconIndex = (currentIcon + 1) % iconComponents.length
-          const nextPos = 10 + nextIconIndex * stepSize // Start at 10% and use 80% of width
+          const nextPos = nextIconIndex * stepSize
 
           // If we're at the end of the cycle, shuffle the icon order for next round
           if (nextIconIndex === 0) {
@@ -91,7 +91,7 @@ export function AnimatedMusicIcon({
   const currentIconComponent = iconComponents[iconOrder[currentIcon]]
 
   return (
-    <div className="relative w-full max-w-full mx-auto h-12 sm:h-16 flex items-center overflow-hidden">
+    <div className="relative w-full max-w-full mx-auto h-12 sm:h-16 flex items-center px-2 sm:px-4">
       <div
         className={`absolute ${className}`}
         style={{
