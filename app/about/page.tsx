@@ -17,8 +17,7 @@ export const metadata = {
   },
   twitter: {
     title: "About Emily Rose Weinstein - Music Supervisor & Producer",
-    description:
-      "Learn about Emily Rose Weinstein, a Los Angeles-based Music Supervisor & Producer with over a decade of experience.",
+    description: "Learn about Emily Rose Weinstein, a Los Angeles-based Music Supervisor & Producer.",
   },
   alternates: {
     canonical: "https://emilyroseweinstein.com/about",
@@ -59,7 +58,7 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto">
           {/* Main Headline */}
           <div className="mb-16 md:mb-24">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold sm:font-light leading-tight text-teal-700 mb-8 md:mb-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold sm:font-light leading-tight text-teal-700 mb-8 md:mb-12 italic">
               Hey there, I'm Emily.
               <br />
               I'm a LA-based
