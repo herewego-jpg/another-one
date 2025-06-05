@@ -37,68 +37,24 @@ export async function GET(request: NextRequest) {
           height: "100%",
           width: "100%",
           display: "flex",
-          flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
           backgroundColor: "#FA8072", // Salmon background
-          fontSize: 32,
-          fontWeight: 600,
         }}
       >
-        {/* Main Icon */}
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            marginBottom: "40px",
-          }}
+        {/* Just the Icon - Nice and Big */}
+        <svg
+          width="400"
+          height="400"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="white"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         >
-          <svg
-            width="120"
-            height="120"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="white"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d={iconPath} />
-          </svg>
-        </div>
-
-        {/* Title */}
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            color: "white",
-            textAlign: "center",
-            maxWidth: "80%",
-          }}
-        >
-          <div
-            style={{
-              fontSize: "48px",
-              fontWeight: "bold",
-              marginBottom: "16px",
-              textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
-            }}
-          >
-            Emily Rose Weinstein
-          </div>
-          <div
-            style={{
-              fontSize: "32px",
-              fontWeight: "300",
-              opacity: 0.9,
-            }}
-          >
-            Music Supervisor & Producer
-          </div>
-        </div>
+          <path d={iconPath} />
+        </svg>
       </div>,
       {
         width: 1200,

@@ -91,7 +91,7 @@ export function AnimatedMusicIcon({
   const currentIconComponent = iconComponents[iconOrder[currentIcon]]
 
   return (
-    <div className="relative w-full max-w-full mx-auto h-16 flex items-center px-4">
+    <div className="relative w-full max-w-full mx-auto h-12 sm:h-16 flex items-center px-2 sm:px-4">
       <div
         className={`absolute ${className}`}
         style={{
