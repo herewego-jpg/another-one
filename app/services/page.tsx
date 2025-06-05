@@ -5,6 +5,26 @@ import Link from "next/link"
 import { ChevronDown } from "lucide-react"
 import { AnimatedMusicIcon } from "../components/animated-music-icon"
 
+export const metadata = {
+  title: "Music Supervision Services - Emily Rose Weinstein",
+  description:
+    "Professional music supervision, original scoring, and audio post-production services for film, TV, commercials, and digital media. Comprehensive audio solutions from concept to delivery.",
+  openGraph: {
+    title: "Music Supervision Services - Emily Rose Weinstein",
+    description:
+      "Professional music supervision, original scoring, and audio post-production services for film, TV, commercials, and digital media.",
+    url: "https://emilyroseweinstein.com/services",
+  },
+  twitter: {
+    title: "Music Supervision Services - Emily Rose Weinstein",
+    description:
+      "Professional music supervision, original scoring, and audio post-production services for entertainment industry.",
+  },
+  alternates: {
+    canonical: "https://emilyroseweinstein.com/services",
+  },
+}
+
 export default function ServicesPage() {
   const services = [
     {

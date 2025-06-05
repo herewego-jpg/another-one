@@ -4,6 +4,25 @@ import { MediaEmbed } from "../components/media-embed"
 import { ChevronDown } from "lucide-react"
 import { AnimatedMusicIcon } from "../components/animated-music-icon"
 
+export const metadata = {
+  title: "Work Portfolio - Emily Rose Weinstein Music Supervisor",
+  description:
+    "Explore Emily Rose Weinstein's portfolio of music supervision work including projects for Apple, Beats by Dre, Tinder, Netflix, Warner Bros, and more. Featured music videos, commercials, and digital campaigns.",
+  openGraph: {
+    title: "Work Portfolio - Emily Rose Weinstein Music Supervisor",
+    description:
+      "Explore Emily Rose Weinstein's portfolio of music supervision work including projects for major brands and studios.",
+    url: "https://emilyroseweinstein.com/work",
+  },
+  twitter: {
+    title: "Work Portfolio - Emily Rose Weinstein Music Supervisor",
+    description: "Portfolio of music supervision work for major brands including Apple, Netflix, Tinder, and more.",
+  },
+  alternates: {
+    canonical: "https://emilyroseweinstein.com/work",
+  },
+}
+
 const projects = [
   {
     id: "dream-academy",
