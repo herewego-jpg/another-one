@@ -8,9 +8,10 @@ const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
 })
 
-// Generate random icon for OG image
+// Generate random icon for OG image with timestamp to ensure uniqueness
 const musicIcons = ["music", "headphones", "mic", "radio", "volume", "waveform"]
 const randomIcon = musicIcons[Math.floor(Math.random() * musicIcons.length)]
+const timestamp = Date.now()
 
 export const metadata = {
   title: "Emily Rose Weinstein - Music Supervisor & Producer",
@@ -23,7 +24,7 @@ export const metadata = {
     siteName: "Emily Rose Weinstein",
     images: [
       {
-        url: `/api/og?icon=${randomIcon}`,
+        url: `/api/og?t=${timestamp}`,
         width: 1200,
         height: 630,
         alt: "Emily Rose Weinstein - Music Supervisor & Producer",
@@ -36,7 +37,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Emily Rose Weinstein - Music Supervisor & Producer",
     description: "Creating music experiences that elevate visual storytelling across all media formats.",
-    images: [`/api/og?icon=${randomIcon}`],
+    images: [`/api/og?t=${timestamp}`],
   },
     generator: 'v0.dev'
 }
