@@ -44,7 +44,7 @@ export const metadata = {
     title: "Emily Rose Weinstein - Music Supervisor & Producer | LA Music Professional",
     description:
       "Emily Rose Weinstein is a Los Angeles-based Music Supervisor & Producer creating music experiences that elevate visual storytelling across all media formats.",
-    url: "https://your-domain.com",
+    url: "https://emilyroseweinstein.com",
     siteName: "Emily Rose Weinstein - Music Supervisor & Producer",
     images: [
       {
@@ -79,7 +79,7 @@ export const metadata = {
     google: "your-google-verification-code",
   },
   alternates: {
-    canonical: "https://your-domain.com",
+    canonical: "https://emilyroseweinstein.com",
   },
   generator: "v0.dev",
 }
@@ -92,7 +92,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href="https://your-domain.com" />
+        <link rel="canonical" href="https://emilyroseweinstein.com" />
         <meta name="geo.region" content="US-CA" />
         <meta name="geo.placename" content="Los Angeles" />
         <meta name="geo.position" content="34.0522;-118.2437" />
@@ -108,8 +108,8 @@ export default function RootLayout({
               jobTitle: "Music Supervisor & Producer",
               description:
                 "Los Angeles-based Music Supervisor & Producer specializing in music supervision, original scoring, and audio post-production for film, TV, commercials, and digital media.",
-              url: "https://your-domain.com",
-              image: "https://your-domain.com/images/emily-latest-photo.jpg",
+              url: "https://emilyroseweinstein.com",
+              image: "https://emilyroseweinstein.com/images/emily-latest-photo.jpg",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Los Angeles",
@@ -144,7 +144,7 @@ export default function RootLayout({
                 "Commercial Music",
                 "Digital Media Music",
               ],
-              sameAs: ["https://your-domain.com"],
+              sameAs: ["https://emilyroseweinstein.com"],
             }),
           }}
         />
