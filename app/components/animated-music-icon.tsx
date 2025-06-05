@@ -27,7 +27,7 @@ export function AnimatedMusicIcon({
   interval = 800,
 }: AnimatedMusicIconProps) {
   const [currentIcon, setCurrentIcon] = useState(0)
-  const [position, setPosition] = useState(0)
+  const [position, setPosition] = useState(50) // Start in the middle
   const [isVisible, setIsVisible] = useState(true)
   const [iconOrder, setIconOrder] = useState([0, 1, 2, 3, 4, 5, 6, 7, 8])
 
@@ -45,7 +45,10 @@ export function AnimatedMusicIcon({
 
   // Use the number of icons to determine positions, ensuring full screen coverage with safe margins
   const totalPositions = iconComponents.length
-  const stepSize = 80 / (totalPositions - 1) // Use 80% width instead of 100% to prevent cutoff
+
+  // More conservative positioning for mobile - use 60% width instead of 80%
+  // This means icons will stay between 20% and 80% of the container width
+  const stepSize = 60 / (totalPositions - 1)
 
   // Shuffle array function
   const shuffleArray = (array: number[]) => {
@@ -70,7 +73,9 @@ export function AnimatedMusicIcon({
         setPosition((prevPos) => {
           // Calculate next position based on current icon index
           const nextIconIndex = (currentIcon + 1) % iconComponents.length
-          const nextPos = 10 + nextIconIndex * stepSize // Start at 10% and use 80% of width
+
+          // Start at 20% and use 60% of width to prevent cutoff on mobile
+          const nextPos = 20 + nextIconIndex * stepSize
 
           // If we're at the end of the cycle, shuffle the icon order for next round
           if (nextIconIndex === 0) {
@@ -91,7 +96,7 @@ export function AnimatedMusicIcon({
   const currentIconComponent = iconComponents[iconOrder[currentIcon]]
 
   return (
-    <div className="relative w-full max-w-full mx-auto h-12 sm:h-16 flex items-center overflow-hidden">
+    <div className="relative w-full max-w-full mx-auto h-12 sm:h-16 flex items-center overflow-hidden px-8 sm:px-12">
       <div
         className={`absolute ${className}`}
         style={{
