@@ -175,9 +175,6 @@ const projects = [
   },
 ]
 
-// Generate random icon for this page's OG image with timestamp
-const timestamp = Date.now()
-
 export const metadata = {
   title: "Emily Rose Weinstein - Music Supervisor & Producer",
   description: "Creating music experiences that elevate visual storytelling across all media formats.",
@@ -186,7 +183,7 @@ export const metadata = {
     description: "Creating music experiences that elevate visual storytelling across all media formats.",
     images: [
       {
-        url: `/api/og?t=${timestamp}`,
+        url: "/api/og",
         width: 1200,
         height: 630,
         alt: "Emily Rose Weinstein - Music Supervisor & Producer",
@@ -197,7 +194,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Emily Rose Weinstein - Music Supervisor & Producer",
     description: "Creating music experiences that elevate visual storytelling across all media formats.",
-    images: [`/api/og?t=${timestamp}`],
+    images: ["/api/og"],
   },
 }
 
