@@ -224,8 +224,9 @@ export default function Home() {
           </p>
 
           {/* Animated Music Icon */}
-          <div className="mt-8 md:mt-12">
-            <AnimatedMusicIcon size={64} />
+          <div className="mt-6 md:mt-12">
+            <AnimatedMusicIcon size={48} className="sm:hidden" />
+            <AnimatedMusicIcon size={64} className="hidden sm:block" />
           </div>
         </div>
 
