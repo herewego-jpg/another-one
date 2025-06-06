@@ -107,7 +107,7 @@ export default function AboutPage() {
             </p>
             <p className="text-lg md:text-xl leading-relaxed text-teal-600 text-justify mt-6">
               My diverse background includes global experience across photography, documentary filmmaking, and Bollywood
-              productions, bringing a unique cross-cultural perspective to every project I undertake.
+              productions, bringing a unique cross-media perspective to every project I undertake.
             </p>
           </div>
 
