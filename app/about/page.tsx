@@ -86,13 +86,14 @@ export default function AboutPage() {
           {/* Introduction Text */}
           <div className="mb-16 md:mb-20">
             <p className="text-lg md:text-xl leading-relaxed text-teal-600 text-justify">
+              I help production teams deliver emotionally resonant, legally airtight soundtracks and scores — on
+              deadline, under budget, and with a sharp creative POV. Whether under my name or white-label, I'm the one
+              who makes music supervision seamless.
+            </p>
+            <p className="text-lg md:text-xl leading-relaxed text-teal-600 text-justify mt-6">
               With over a decade of experience in creative production, music supervision, original scoring, and audio
               post-production, I specialize in working with teams to create sonic experiences that elevate visual
               storytelling across all media formats.
-            </p>
-            <p className="text-lg md:text-xl leading-relaxed text-teal-600 text-justify mt-6">
-              My approach combines technical expertise with creative vision to deliver white label services for premium
-              audio solutions that resonate with audiences and enhance your brand's message.
             </p>
           </div>
 
