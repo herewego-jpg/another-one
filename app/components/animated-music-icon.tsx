@@ -43,12 +43,15 @@ export function AnimatedMusicIcon({
     <Music4 key="music4" size={size} color={color} strokeWidth={1.5} />,
   ]
 
-  // Use the number of icons to determine positions, ensuring full screen coverage with safe margins
+  // Use the number of icons to determine positions
   const totalPositions = iconComponents.length
 
-  // More conservative positioning for mobile - use 60% width instead of 80%
-  // This means icons will stay between 20% and 80% of the container width
-  const stepSize = 60 / (totalPositions - 1)
+  // Much more conservative positioning for mobile - use only 40% width on mobile, 60% on desktop
+  // This means icons will stay between 30% and 70% of the container width on mobile
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 768
+  const safeWidth = isMobile ? 40 : 60
+  const startPosition = isMobile ? 30 : 20
+  const stepSize = safeWidth / (totalPositions - 1)
 
   // Shuffle array function
   const shuffleArray = (array: number[]) => {
@@ -69,13 +72,13 @@ export function AnimatedMusicIcon({
       setTimeout(() => {
         setCurrentIcon((prev) => (prev + 1) % iconComponents.length)
 
-        // Update position
+        // Update position with safer bounds
         setPosition((prevPos) => {
           // Calculate next position based on current icon index
           const nextIconIndex = (currentIcon + 1) % iconComponents.length
 
-          // Start at 20% and use 60% of width to prevent cutoff on mobile
-          const nextPos = 20 + nextIconIndex * stepSize
+          // Use conservative positioning to prevent cutoff
+          const nextPos = startPosition + nextIconIndex * stepSize
 
           // If we're at the end of the cycle, shuffle the icon order for next round
           if (nextIconIndex === 0) {
@@ -90,13 +93,13 @@ export function AnimatedMusicIcon({
     }, interval)
 
     return () => clearInterval(timer)
-  }, [interval, iconComponents.length, stepSize, currentIcon, iconOrder])
+  }, [interval, iconComponents.length, stepSize, currentIcon, iconOrder, startPosition])
 
   // Get the current icon based on the shuffled order
   const currentIconComponent = iconComponents[iconOrder[currentIcon]]
 
   return (
-    <div className="relative w-full max-w-full mx-auto h-12 sm:h-16 flex items-center overflow-hidden px-8 sm:px-12">
+    <div className="relative w-full max-w-full mx-auto h-16 sm:h-20 flex items-center justify-center overflow-hidden px-16 sm:px-20">
       <div
         className={`absolute ${className}`}
         style={{
