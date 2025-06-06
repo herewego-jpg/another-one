@@ -17,7 +17,7 @@ export const metadata = {
   },
   twitter: {
     title: "About Emily Rose Weinstein - Music Supervisor & Producer",
-    description: "Learn about Emily Rose Weinstein, a Los Angeles-based Music Supervisor & Producer.",
+    description: "Learn about Emily Rose Weinstein - Music Supervisor & Producer.",
   },
   alternates: {
     canonical: "https://emilyroseweinstein.com/about",
