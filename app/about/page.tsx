@@ -77,7 +77,7 @@ export default function AboutPage() {
                 alt="Emily Rose Weinstein - Music Supervisor & Producer"
                 fill
                 className="object-cover"
-                style={{ objectPosition: "center 20%" }}
+                style={{ objectPosition: "center 35%" }}
                 priority
               />
             </div>
