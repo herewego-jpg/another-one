@@ -71,13 +71,13 @@ export default function AboutPage() {
 
           {/* Centered Photo */}
           <div className="flex justify-center mb-16 md:mb-20">
-            <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-full overflow-hidden shadow-2xl">
+            <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl">
               <Image
-                src="/images/emily-latest-photo.jpg"
+                src="/images/emily-japan-photo.jpg"
                 alt="Emily Rose Weinstein - Music Supervisor & Producer"
                 fill
                 className="object-cover"
-                style={{ objectPosition: "center 10%" }}
+                style={{ objectPosition: "center center" }}
                 priority
               />
             </div>
