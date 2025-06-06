@@ -76,8 +76,8 @@ export default function AboutPage() {
                 src="/images/emily-japan-photo.jpg"
                 alt="Emily Rose Weinstein - Music Supervisor & Producer"
                 fill
-                className="object-cover scale-120"
-                style={{ objectPosition: "60% 35%" }}
+                className="object-cover"
+                style={{ objectPosition: "55% 38%", transform: "scale(1.45)" }}
                 priority
               />
             </div>
