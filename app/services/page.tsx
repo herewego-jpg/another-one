@@ -77,7 +77,7 @@ export default function ServicesPage() {
           </p>
 
           {/* Animated Music Icon */}
-          <div className="mt-8 md:mt-12 max-w-full overflow-visible">
+          <div className="mt-8 md:mt-12 w-full h-20 sm:h-24 flex items-center justify-center overflow-hidden">
             <AnimatedMusicIcon size={64} />
           </div>
         </div>
