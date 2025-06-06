@@ -54,10 +54,10 @@ export default function AboutPage() {
       </section>
 
       {/* About Content */}
-      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-16 md:py-24 px-6 sm:px-8 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
           {/* Main Headline */}
-          <div className="mb-16 md:mb-24">
+          <div className="mb-16 md:mb-24 px-2 sm:px-0">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold sm:font-light leading-tight text-teal-700 mb-8 md:mb-12 italic">
               Hey there, I'm Emily.
               <br />
@@ -69,35 +69,36 @@ export default function AboutPage() {
             </h2>
           </div>
 
-          {/* Centered Photo */}
-          <div className="flex justify-center mb-16 md:mb-20">
-            <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl">
+          {/* Center-right aligned Photo */}
+          <div className="flex justify-center md:justify-center mb-16 md:mb-20">
+            <div className="relative w-80 h-96 sm:w-96 sm:h-[28rem] md:w-[26rem] md:h-[30rem] rounded-3xl overflow-hidden shadow-2xl md:ml-16">
               <Image
                 src="/images/emily-japan-photo.jpg"
                 alt="Emily Rose Weinstein - Music Supervisor & Producer"
                 fill
                 className="object-cover"
-                style={{ objectPosition: "center center" }}
+                style={{ objectPosition: "55% 38%", transform: "scale(1.45)" }}
                 priority
               />
             </div>
           </div>
 
           {/* Introduction Text */}
-          <div className="mb-16 md:mb-20">
+          <div className="mb-16 md:mb-20 px-2 sm:px-0">
             <p className="text-lg md:text-xl leading-relaxed text-teal-600 text-justify">
+              I help production teams deliver emotionally resonant, legally airtight soundtracks and scores — on
+              deadline, under budget, and with a sharp creative POV. Whether under my name or white-label, I'm the one
+              who makes music supervision seamless.
+            </p>
+            <p className="text-lg md:text-xl leading-relaxed text-teal-600 text-justify mt-6">
               With over a decade of experience in creative production, music supervision, original scoring, and audio
               post-production, I specialize in working with teams to create sonic experiences that elevate visual
               storytelling across all media formats.
             </p>
-            <p className="text-lg md:text-xl leading-relaxed text-teal-600 text-justify mt-6">
-              My approach combines technical expertise with creative vision to deliver white label services for premium
-              audio solutions that resonate with audiences and enhance your brand's message.
-            </p>
           </div>
 
           {/* Experience Section */}
-          <div className="mb-16 md:mb-20">
+          <div className="mb-16 md:mb-20 px-2 sm:px-0">
             <h3 className="text-2xl md:text-3xl font-bold text-teal-700 mb-6 md:mb-8">Experience</h3>
             <p className="text-lg md:text-xl leading-relaxed text-teal-600 text-justify">
               I've had the privilege of working with major brands including Apple, Beats by Dre, Tinder, American
@@ -112,7 +113,7 @@ export default function AboutPage() {
           </div>
 
           {/* Collaboration Section */}
-          <div className="mb-20 md:mb-24">
+          <div className="mb-20 md:mb-24 px-2 sm:px-0">
             <h3 className="text-2xl md:text-3xl font-bold text-teal-700 mb-6 md:mb-8">Collaboration</h3>
             <p className="text-lg md:text-xl leading-relaxed text-teal-600 text-justify">
               I believe the best work comes from true collaboration. I work closely with directors, creative teams, and
@@ -120,14 +121,14 @@ export default function AboutPage() {
               have been initially imagined.
             </p>
             <p className="text-lg md:text-xl leading-relaxed text-teal-600 text-justify mt-6">
-              As a freelancer, I've both led and supported projects at some of the industry's most prominent music
-              companies including Squeak E. Clean Studios, Found Objects, Invisible Arts, as well as creatives and
-              production executives from Human Worldwide.
+              Best known for my meticulous production flow, I've both led and supported projects at some of the
+              industry's most prominent music companies including Squeak E. Clean Studios, Found Objects, Invisible
+              Arts, as well as creatives and production executives from Human Worldwide.
             </p>
           </div>
 
           {/* Philosophy Section */}
-          <div className="mb-16 md:mb-20">
+          <div className="mb-16 md:mb-20 px-2 sm:px-0">
             <h3 className="text-2xl md:text-3xl font-bold text-teal-700 mb-6 md:mb-8">Philosophy</h3>
             <p className="text-lg md:text-xl leading-relaxed text-teal-600 text-justify">
               Every project tells a unique story, and music is the bridge that connects that story with its audience.
@@ -138,7 +139,7 @@ export default function AboutPage() {
           </div>
 
           {/* Call to Action */}
-          <div className="text-left mb-12 md:mb-16">
+          <div className="text-left mb-12 md:mb-16 px-2 sm:px-0">
             <p className="text-2xl md:text-3xl lg:text-4xl text-teal-700 mb-8 md:mb-12">
               <Link href="/contact" className="hover:text-teal-800 transition-colors">
                 Like what you hear? <span className="text-teal-500">Let's work together :)</span>
@@ -147,7 +148,7 @@ export default function AboutPage() {
           </div>
 
           {/* Signature */}
-          <div className="text-left">
+          <div className="text-left px-2 sm:px-0">
             <p className="text-lg md:text-xl font-bold uppercase tracking-wider text-teal-700 mb-4">MUCH LOVE,</p>
             <p
               className="text-6xl md:text-7xl lg:text-8xl font-light italic text-teal-700"
