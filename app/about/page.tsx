@@ -73,19 +73,19 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              {/* Text to the right - Improved typography */}
+              {/* Text to the right - Improved typography with more distinct weight differences */}
               <div className="lg:flex-1 lg:pt-4">
                 <div className="space-y-1 md:space-y-2">
-                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-teal-700 italic tracking-tight leading-[1.1]">
+                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-extralight text-teal-700 italic tracking-tight leading-[1.1]">
                     Hey there, I'm Emily.
                   </h2>
-                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-teal-700 italic tracking-tight leading-[1.1] mt-2 md:mt-3">
+                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-extralight text-teal-700 italic tracking-tight leading-[1.1] mt-2 md:mt-3">
                     I'm a LA-based
                   </h2>
-                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium text-teal-700 italic tracking-tight leading-[1.1] mt-2 md:mt-3">
+                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-teal-700 italic tracking-tight leading-[1.1] mt-2 md:mt-3">
                     Music Supervisor &
                   </h2>
-                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium text-teal-700 italic tracking-tight leading-[1.1] mt-2 md:mt-3">
+                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-teal-700 italic tracking-tight leading-[1.1] mt-2 md:mt-3">
                     Producer
                   </h2>
                 </div>
