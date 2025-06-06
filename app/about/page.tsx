@@ -41,7 +41,7 @@ export default function AboutPage() {
           </p>
 
           {/* Animated Music Icon */}
-          <div className="mt-8 md:mt-12">
+          <div className="mt-8 md:mt-12 max-w-full overflow-visible">
             <AnimatedMusicIcon size={64} />
           </div>
         </div>
@@ -104,6 +104,10 @@ export default function AboutPage() {
               Express, Uber, Marriott, and more, as well as major studios including Warner Bros. and Netflix. My work
               spans music videos, commercial campaigns, sports marketing, luxury brand content, and digital media across
               platforms like TikTok, YouTube, Instagram, and streaming services.
+            </p>
+            <p className="text-lg md:text-xl leading-relaxed text-teal-600 text-justify mt-6">
+              My diverse background includes global experience across photography, documentary filmmaking, and Bollywood
+              productions, bringing a unique cross-cultural perspective to every project I undertake.
             </p>
           </div>
 
