@@ -41,7 +41,7 @@ export default function AboutPage() {
           </p>
 
           {/* Animated Music Icon */}
-          <div className="mt-8 md:mt-12 max-w-full overflow-visible">
+          <div className="mt-8 md:mt-12 w-full h-20 sm:h-24 flex items-center justify-center overflow-hidden">
             <AnimatedMusicIcon size={64} />
           </div>
         </div>
@@ -56,30 +56,40 @@ export default function AboutPage() {
       {/* About Content */}
       <section className="py-16 md:py-24 px-6 sm:px-8 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
-          {/* Main Headline */}
-          <div className="mb-16 md:mb-24 px-2 sm:px-0">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold sm:font-light leading-tight text-teal-700 mb-8 md:mb-12 italic">
-              Hey there, I'm Emily.
-              <br />
-              I'm a LA-based
-              <br />
-              Music Supervisor &
-              <br />
-              Producer.
-            </h2>
-          </div>
+          {/* Main Headline and Photo Layout */}
+          <div className="mb-16 md:mb-24">
+            <div className="flex flex-col lg:flex-row lg:items-start lg:gap-16 px-2 sm:px-0">
+              {/* Photo */}
+              <div className="flex justify-center lg:justify-start mb-8 lg:mb-0 lg:flex-shrink-0">
+                <div className="relative w-80 h-96 sm:w-96 sm:h-[28rem] md:w-[26rem] md:h-[30rem] rounded-3xl overflow-hidden shadow-2xl">
+                  <Image
+                    src="/images/emily-japan-photo.jpg"
+                    alt="Emily Rose Weinstein - Music Supervisor & Producer"
+                    fill
+                    className="object-cover"
+                    style={{ objectPosition: "55% 38%", transform: "scale(1.45)" }}
+                    priority
+                  />
+                </div>
+              </div>
 
-          {/* Center-right aligned Photo */}
-          <div className="flex justify-center md:justify-center mb-16 md:mb-20">
-            <div className="relative w-80 h-96 sm:w-96 sm:h-[28rem] md:w-[26rem] md:h-[30rem] rounded-3xl overflow-hidden shadow-2xl md:ml-16">
-              <Image
-                src="/images/emily-japan-photo.jpg"
-                alt="Emily Rose Weinstein - Music Supervisor & Producer"
-                fill
-                className="object-cover"
-                style={{ objectPosition: "55% 38%", transform: "scale(1.45)" }}
-                priority
-              />
+              {/* Text to the right - Improved typography with more distinct weight differences */}
+              <div className="lg:flex-1 lg:pt-4">
+                <div className="space-y-1 md:space-y-2">
+                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-extralight text-teal-700 italic tracking-tight leading-[1.1]">
+                    Hey there, I'm Emily.
+                  </h2>
+                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-extralight text-teal-700 italic tracking-tight leading-[1.1] mt-2 md:mt-3">
+                    I'm a LA-based
+                  </h2>
+                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-teal-700 italic tracking-tight leading-[1.1] mt-2 md:mt-3">
+                    Music Supervisor &
+                  </h2>
+                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-teal-700 italic tracking-tight leading-[1.1] mt-2 md:mt-3">
+                    Producer
+                  </h2>
+                </div>
+              </div>
             </div>
           </div>
 
