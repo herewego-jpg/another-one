@@ -17,7 +17,7 @@ export const metadata = {
   },
   twitter: {
     title: "About Emily Rose Weinstein - Music Supervisor & Producer",
-    description: "Learn about Emily Rose Weinstein, a Los Angeles-based Music Supervisor & Producer.",
+    description: "Learn about Emily Rose Weinstein - Music Supervisor & Producer.",
   },
   alternates: {
     canonical: "https://emilyroseweinstein.com/about",
@@ -41,7 +41,7 @@ export default function AboutPage() {
           </p>
 
           {/* Animated Music Icon */}
-          <div className="mt-8 md:mt-12">
+          <div className="mt-8 md:mt-12 max-w-full overflow-visible">
             <AnimatedMusicIcon size={64} />
           </div>
         </div>
@@ -71,13 +71,13 @@ export default function AboutPage() {
 
           {/* Centered Photo */}
           <div className="flex justify-center mb-16 md:mb-20">
-            <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-full overflow-hidden shadow-2xl">
+            <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl">
               <Image
-                src="/images/emily-latest-photo.jpg"
+                src="/images/emily-japan-photo.jpg"
                 alt="Emily Rose Weinstein - Music Supervisor & Producer"
                 fill
                 className="object-cover"
-                style={{ objectPosition: "center 10%" }}
+                style={{ objectPosition: "center center" }}
                 priority
               />
             </div>
@@ -104,6 +104,10 @@ export default function AboutPage() {
               Express, Uber, Marriott, and more, as well as major studios including Warner Bros. and Netflix. My work
               spans music videos, commercial campaigns, sports marketing, luxury brand content, and digital media across
               platforms like TikTok, YouTube, Instagram, and streaming services.
+            </p>
+            <p className="text-lg md:text-xl leading-relaxed text-teal-600 text-justify mt-6">
+              My diverse background includes global experience across photography, documentary filmmaking, and Bollywood
+              productions, bringing a unique transmedia perspective to every project I undertake.
             </p>
           </div>
 

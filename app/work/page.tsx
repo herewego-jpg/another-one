@@ -62,7 +62,7 @@ export default function WorkPage() {
           </p>
 
           {/* Animated Music Icon */}
-          <div className="mt-8 md:mt-12">
+          <div className="mt-8 md:mt-12 max-w-full overflow-visible">
             <AnimatedMusicIcon size={64} />
           </div>
         </div>
