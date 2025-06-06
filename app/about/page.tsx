@@ -121,9 +121,9 @@ export default function AboutPage() {
               have been initially imagined.
             </p>
             <p className="text-lg md:text-xl leading-relaxed text-teal-600 text-justify mt-6">
-              As a freelancer, I've both led and supported projects at some of the industry's most prominent music
-              companies including Squeak E. Clean Studios, Found Objects, Invisible Arts, as well as creatives and
-              production executives from Human Worldwide.
+              Best known for my meticulous production flow, I've both led and supported projects at some of the
+              industry's most prominent music companies including Squeak E. Clean Studios, Found Objects, Invisible
+              Arts, as well as creatives and production executives from Human Worldwide.
             </p>
           </div>
 
