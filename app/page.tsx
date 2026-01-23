@@ -20,6 +20,17 @@ const projects = [
     featured: true,
   },
   {
+    id: "betmgm-mullet",
+    title: "BetMGM - Mullet Over",
+    description: "BetMGM commercial featuring strategic music supervision",
+    category: "Commercial",
+    year: "2025",
+    type: "hls" as const,
+    hlsUrl: "https://dtfcrmzlczpxg.cloudfront.net/wp-crain/20251215/694023eda5a62c19bd099fbb/t_0968f85e5d714f439d2c2e4e82012045_name_BetMGM___Mullet_Over___45s/hd.m3u8",
+    thumbnail: "/placeholder.svg?height=300&width=400",
+    featured: true,
+  },
+  {
     id: "tinder-class",
     title: "Class | It Starts With A Swipe™",
     description:
@@ -267,6 +278,7 @@ export default function Home() {
                     type={project.type}
                     videoId={project.videoId}
                     postId={project.postId}
+                    hlsUrl={project.hlsUrl}
                     startAt={project.startAt}
                   />
                 </CardContent>

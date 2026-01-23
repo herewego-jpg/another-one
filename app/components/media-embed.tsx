@@ -2,22 +2,28 @@
 
 import { YouTubeEmbed } from "./youtube-embed"
 import { InstagramEmbed } from "./instagram-embed"
+import { HLSVideo } from "./hls-video"
 
 interface MediaEmbedProps {
-  type: "youtube" | "instagram"
+  type: "youtube" | "instagram" | "hls"
   videoId?: string
   postId?: string
+  hlsUrl?: string
   startAt?: string
   className?: string
 }
 
-export function MediaEmbed({ type, videoId, postId, startAt, className = "" }: MediaEmbedProps) {
+export function MediaEmbed({ type, videoId, postId, hlsUrl, startAt, className = "" }: MediaEmbedProps) {
   if (type === "youtube" && videoId) {
     return <YouTubeEmbed videoId={videoId} startAt={startAt} className={className} />
   }
 
   if (type === "instagram" && postId) {
     return <InstagramEmbed postId={postId} className={className} />
+  }
+
+  if (type === "hls" && hlsUrl) {
+    return <HLSVideo src={hlsUrl} className={className} />
   }
 
   return (
