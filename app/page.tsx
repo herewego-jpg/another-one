@@ -279,6 +279,7 @@ export default function Home() {
                     videoId={project.videoId}
                     postId={project.postId}
                     hlsUrl={project.hlsUrl}
+                    hlsTitle={project.title}
                     startAt={project.startAt}
                   />
                 </CardContent>

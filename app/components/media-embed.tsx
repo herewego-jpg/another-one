@@ -9,11 +9,12 @@ interface MediaEmbedProps {
   videoId?: string
   postId?: string
   hlsUrl?: string
+  hlsTitle?: string
   startAt?: string
   className?: string
 }
 
-export function MediaEmbed({ type, videoId, postId, hlsUrl, startAt, className = "" }: MediaEmbedProps) {
+export function MediaEmbed({ type, videoId, postId, hlsUrl, hlsTitle, startAt, className = "" }: MediaEmbedProps) {
   if (type === "youtube" && videoId) {
     return <YouTubeEmbed videoId={videoId} startAt={startAt} className={className} />
   }
@@ -23,7 +24,7 @@ export function MediaEmbed({ type, videoId, postId, hlsUrl, startAt, className =
   }
 
   if (type === "hls" && hlsUrl) {
-    return <HLSVideo src={hlsUrl} className={className} />
+    return <HLSVideo src={hlsUrl} title={hlsTitle} className={className} />
   }
 
   return (
