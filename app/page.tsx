@@ -43,6 +43,17 @@ const projects = [
     featured: true,
   },
   {
+    id: "spectrum-spot",
+    title: "Spectrum",
+    description: "Spectrum commercial featuring strategic music supervision",
+    category: "Commercial",
+    year: "2024",
+    type: "youtube" as const,
+    videoId: "8UY_8tBZRZY",
+    thumbnail: "/placeholder.svg?height=300&width=400",
+    featured: true,
+  },
+  {
     id: "tinder-campaign-3",
     title: "It Starts With A Swipe™ - Campaign 3",
     description:
@@ -65,17 +76,6 @@ const projects = [
     videoId: "EuMl5blJhuA",
     thumbnail: "/placeholder.svg?height=300&width=400",
     featured: false,
-  },
-  {
-    id: "spectrum-spot",
-    title: "Spectrum",
-    description: "Spectrum commercial featuring strategic music supervision",
-    category: "Commercial",
-    year: "2024",
-    type: "youtube" as const,
-    videoId: "8UY_8tBZRZY",
-    thumbnail: "/placeholder.svg?height=300&width=400",
-    featured: true,
   },
   {
     id: "dream-academy",
