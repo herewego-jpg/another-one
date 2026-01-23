@@ -8,6 +8,76 @@ import { AnimatedMusicIcon } from "./components/animated-music-icon"
 
 const projects = [
   {
+    id: "tinder-rescue",
+    title: "Rescue | It Starts with a Swipe™",
+    description:
+      "Tinder's heartwarming campaign showcasing real connections and meaningful relationships through strategic music supervision",
+    category: "Digital Marketing",
+    year: "2024",
+    type: "youtube" as const,
+    videoId: "cqBbq4Jtn3I",
+    thumbnail: "/placeholder.svg?height=300&width=400",
+    featured: true,
+  },
+  {
+    id: "betmgm-mullet",
+    title: "Mullet Over",
+    description: "BetMGM commercial featuring strategic music supervision",
+    category: "Commercial",
+    year: "2025",
+    type: "youtube" as const,
+    videoId: "qRi5KmlhG94",
+    thumbnail: "/placeholder.svg?height=300&width=400",
+    featured: true,
+  },
+  {
+    id: "tinder-class",
+    title: "Class | It Starts With A Swipe™",
+    description:
+      "Part of Tinder's acclaimed campaign series highlighting authentic connections with carefully curated musical storytelling",
+    category: "Digital Marketing",
+    year: "2024",
+    type: "youtube" as const,
+    videoId: "H8-P9T11IkQ",
+    thumbnail: "/placeholder.svg?height=300&width=400",
+    featured: true,
+  },
+  {
+    id: "tinder-campaign-3",
+    title: "It Starts With A Swipe™ - Campaign 3",
+    description:
+      "Third installment in Tinder's successful digital marketing series, featuring innovative music supervision for modern dating culture",
+    category: "Digital Marketing",
+    year: "2024",
+    type: "youtube" as const,
+    videoId: "GknITY8cLgE",
+    thumbnail: "/placeholder.svg?height=300&width=400",
+    featured: false,
+  },
+  {
+    id: "tinder-campaign-4",
+    title: "It Starts With A Swipe™ - Campaign 4",
+    description:
+      "Latest addition to Tinder's award-winning campaign series, showcasing sophisticated music supervision for digital platforms",
+    category: "Digital Marketing",
+    year: "2024",
+    type: "youtube" as const,
+    videoId: "EuMl5blJhuA",
+    thumbnail: "/placeholder.svg?height=300&width=400",
+    featured: false,
+  },
+  {
+    id: "spectrum-spot",
+    title: "Spectrum",
+    description: "Spectrum commercial featuring strategic music supervision",
+    category: "Commercial",
+    year: "2024",
+    type: "youtube" as const,
+    videoId: "8UY_8tBZRZY",
+    thumbnail: "/placeholder.svg?height=300&width=400",
+    featured: true,
+  },
+  {
     id: "dream-academy",
     title: "Dream Academy Art Film",
     description: "HYBE x Geffen collaboration showcasing the creative vision behind Dream Academy",
@@ -53,54 +123,6 @@ const projects = [
     videoId: "ax5xMEsWxUw",
     thumbnail: "/placeholder.svg?height=300&width=400",
     featured: true,
-  },
-  {
-    id: "tinder-rescue",
-    title: "Rescue | It Starts with a Swipe™",
-    description:
-      "Tinder's heartwarming campaign showcasing real connections and meaningful relationships through strategic music supervision",
-    category: "Digital Marketing",
-    year: "2024",
-    type: "youtube" as const,
-    videoId: "7XTcEB_E44Y",
-    thumbnail: "/placeholder.svg?height=300&width=400",
-    featured: true,
-  },
-  {
-    id: "tinder-class",
-    title: "Class | It Starts With A Swipe™",
-    description:
-      "Part of Tinder's acclaimed campaign series highlighting authentic connections with carefully curated musical storytelling",
-    category: "Digital Marketing",
-    year: "2024",
-    type: "youtube" as const,
-    videoId: "H8-P9T11IkQ",
-    thumbnail: "/placeholder.svg?height=300&width=400",
-    featured: true,
-  },
-  {
-    id: "tinder-campaign-3",
-    title: "It Starts With A Swipe™ - Campaign 3",
-    description:
-      "Third installment in Tinder's successful digital marketing series, featuring innovative music supervision for modern dating culture",
-    category: "Digital Marketing",
-    year: "2024",
-    type: "youtube" as const,
-    videoId: "GknITY8cLgE",
-    thumbnail: "/placeholder.svg?height=300&width=400",
-    featured: false,
-  },
-  {
-    id: "tinder-campaign-4",
-    title: "It Starts With A Swipe™ - Campaign 4",
-    description:
-      "Latest addition to Tinder's award-winning campaign series, showcasing sophisticated music supervision for digital platforms",
-    category: "Digital Marketing",
-    year: "2024",
-    type: "youtube" as const,
-    videoId: "EuMl5blJhuA",
-    thumbnail: "/placeholder.svg?height=300&width=400",
-    featured: false,
   },
   {
     id: "silversea-luxury",
@@ -256,6 +278,9 @@ export default function Home() {
                     type={project.type}
                     videoId={project.videoId}
                     postId={project.postId}
+                    hlsUrl={project.hlsUrl}
+                    hlsTitle={project.title}
+                    hlsLogo={project.hlsLogo}
                     startAt={project.startAt}
                   />
                 </CardContent>
