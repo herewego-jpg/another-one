@@ -35,7 +35,7 @@ export default function AboutPage() {
         style={{ backgroundColor: "#0827F5" }}
       >
         <div className="text-center px-4">
-          <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold mb-4 md:mb-6 tracking-tight lowercase" style={{ color: "#89CC04" }}>about</h1>
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-4 md:mb-6 tracking-tight lowercase" style={{ color: "#89CC04" }}>about</h1>
           <p className="text-lg sm:text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed lowercase" style={{ color: "#89CC04" }}>
             crafting sonic narratives that connect with audiences
           </p>
@@ -173,7 +173,7 @@ export default function AboutPage() {
       {/* Contact Section */}
       <section className="py-12 md:py-20" style={{ backgroundColor: "#0827F5" }}>
         <div className="max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 lowercase" style={{ color: "#89CC04" }}>ready to collaborate?</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 lowercase" style={{ color: "#89CC04" }}>ready to collaborate?</h2>
           <Link href="/contact">
             <Button
               size="lg"
