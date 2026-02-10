@@ -34,9 +34,9 @@ export default function AboutPage() {
         className="min-h-[100svh] flex items-center justify-center relative"
         style={{ backgroundColor: "#0827F5" }}
       >
-        <div className="text-center text-white px-4">
-          <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold mb-4 md:mb-6 tracking-tight">About</h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-100 max-w-2xl mx-auto leading-relaxed">
+        <div className="text-center px-4">
+          <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold mb-4 md:mb-6 tracking-tight" style={{ color: "#89CC04" }}>About</h1>
+          <p className="text-lg sm:text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed" style={{ color: "#89CC04" }}>
             Crafting sonic narratives that connect with audiences
           </p>
 
@@ -171,9 +171,9 @@ export default function AboutPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-12 md:py-20 text-white" style={{ backgroundColor: "#0827F5" }}>
+      <section className="py-12 md:py-20" style={{ backgroundColor: "#0827F5" }}>
         <div className="max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">Ready to Collaborate?</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8" style={{ color: "#89CC04" }}>Ready to Collaborate?</h2>
           <Link href="/contact">
             <Button
               size="lg"

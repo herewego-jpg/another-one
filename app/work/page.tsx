@@ -55,9 +55,9 @@ export default function WorkPage() {
         className="min-h-[100svh] flex items-center justify-center relative px-4"
         style={{ backgroundColor: "#0827F5" }}
       >
-        <div className="text-center text-white">
-          <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold mb-4 md:mb-6 tracking-tight">Work</h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-100 max-w-2xl mx-auto leading-relaxed">
+        <div className="text-center">
+          <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold mb-4 md:mb-6 tracking-tight" style={{ color: "#89CC04" }}>Work</h1>
+          <p className="text-lg sm:text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed" style={{ color: "#89CC04" }}>
             Featured projects and collaborations
           </p>
 
