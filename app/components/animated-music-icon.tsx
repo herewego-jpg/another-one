@@ -1,17 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import {
-  Music,
-  Headphones,
-  Mic,
-  Radio,
-  Volume2,
-  AudioWaveformIcon as Waveform,
-  Music2,
-  Music3,
-  Music4,
-} from "lucide-react"
+import { Music, Headphones, Mic, Radio, Volume2, AudioWaveform as Waveform, Music2, Music3, Music4 } from "lucide-react"
 
 interface AnimatedMusicIconProps {
   className?: string
@@ -23,7 +13,7 @@ interface AnimatedMusicIconProps {
 export function AnimatedMusicIcon({
   className = "",
   size = 48,
-  color = "white",
+  color = "#FACC15",
   interval = 800,
 }: AnimatedMusicIconProps) {
   const [currentIcon, setCurrentIcon] = useState(0)

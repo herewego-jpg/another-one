@@ -103,7 +103,7 @@ export const metadata = {
       {
         rel: "mask-icon",
         url: "/safari-pinned-tab.svg",
-        color: "#FA8072",
+        color: "#0827F5",
       },
     ],
   },
@@ -122,8 +122,8 @@ export const metadata = {
   category: "Music Production",
   classification: "Music Supervisor & Producer",
   other: {
-    "msapplication-TileColor": "#FA8072",
-    "theme-color": "#FA8072",
+    "msapplication-TileColor": "#0827F5",
+    "theme-color": "#0827F5",
   },
     generator: 'v0.app'
 }

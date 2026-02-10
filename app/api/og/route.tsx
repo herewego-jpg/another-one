@@ -40,7 +40,7 @@ export async function GET(request: NextRequest) {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: "#FA8072", // Salmon background
+          backgroundColor: "#0827F5", // Salmon background
         }}
       >
         {/* Just the Icon - Nice and Big */}
