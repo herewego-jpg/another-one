@@ -32,7 +32,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section
         className="min-h-[100svh] flex items-center justify-center relative"
-        style={{ backgroundColor: "#FA8072" }}
+        style={{ backgroundColor: "#0827F5" }}
       >
         <div className="text-center text-white px-4">
           <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold mb-4 md:mb-6 tracking-tight">About</h1>
@@ -171,7 +171,7 @@ export default function AboutPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-12 md:py-20 text-white" style={{ backgroundColor: "#FA8072" }}>
+      <section className="py-12 md:py-20 text-white" style={{ backgroundColor: "#0827F5" }}>
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">Ready to Collaborate?</h2>
           <Link href="/contact">

@@ -228,7 +228,7 @@ export default function Home() {
       {/* Hero Section */}
       <section
         className="min-h-[100svh] flex items-center justify-center relative px-4"
-        style={{ backgroundColor: "#FA8072" }}
+        style={{ backgroundColor: "#0827F5" }}
       >
         <div className="text-center text-white">
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-bold mb-4 md:mb-6 tracking-tight">
@@ -291,7 +291,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-12 md:py-20 text-white" style={{ backgroundColor: "#FA8072" }}>
+      <section className="py-12 md:py-20 text-white" style={{ backgroundColor: "#0827F5" }}>
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">Let's Create Together</h2>
           <Link href="/contact">

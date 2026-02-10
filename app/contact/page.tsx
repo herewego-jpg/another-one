@@ -35,7 +35,7 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section
         className="min-h-[100svh] flex items-center justify-center relative px-4"
-        style={{ backgroundColor: "#FA8072" }}
+        style={{ backgroundColor: "#0827F5" }}
       >
         <div className="text-center text-white">
           <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold mb-4 md:mb-6 tracking-tight">
