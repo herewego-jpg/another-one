@@ -59,22 +59,8 @@ export default function AboutPage() {
           {/* Main Headline and Photo Layout */}
           <div className="mb-16 md:mb-24">
             <div className="flex flex-col lg:flex-row lg:items-start lg:gap-16 px-2 sm:px-0">
-              {/* Photo */}
-              <div className="flex justify-center lg:justify-start mb-8 lg:mb-0 lg:flex-shrink-0">
-                <div className="relative w-80 h-96 sm:w-96 sm:h-[28rem] md:w-[26rem] md:h-[30rem] rounded-3xl overflow-hidden shadow-2xl">
-                  <Image
-                    src="/images/emily-headshot.jpg"
-                    alt="Emily Rose Weinstein - Music Supervisor & Producer"
-                    fill
-                    className="object-cover"
-                    style={{ objectPosition: "center 20%" }}
-                    priority
-                  />
-                </div>
-              </div>
-
-              {/* Text to the right - Improved typography with more distinct weight differences */}
-              <div className="lg:flex-1 lg:pt-4">
+              {/* Text on the left */}
+              <div className="lg:flex-1 lg:pt-4 mb-8 lg:mb-0">
                 <div className="space-y-1 md:space-y-2">
                   <h2 className="text-4xl md:text-5xl lg:text-6xl font-extralight text-teal-700 italic tracking-tight leading-[1.1]">
                     Hey there, I'm Emily.
@@ -88,6 +74,20 @@ export default function AboutPage() {
                   <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-teal-700 italic tracking-tight leading-[1.1] mt-2 md:mt-3">
                     Producer
                   </h2>
+                </div>
+              </div>
+
+              {/* Photo on the right */}
+              <div className="flex justify-center lg:justify-end lg:flex-shrink-0">
+                <div className="relative w-80 h-96 sm:w-96 sm:h-[28rem] md:w-[26rem] md:h-[30rem] rounded-3xl overflow-hidden shadow-2xl">
+                  <Image
+                    src="/images/emily-headshot.jpg"
+                    alt="Emily Rose Weinstein - Music Supervisor & Producer"
+                    fill
+                    className="object-cover"
+                    style={{ objectPosition: "center 20%" }}
+                    priority
+                  />
                 </div>
               </div>
             </div>
