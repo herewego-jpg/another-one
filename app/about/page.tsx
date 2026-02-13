@@ -35,7 +35,7 @@ export default function AboutPage() {
         style={{ backgroundColor: "#0827F5" }}
       >
         <div className="text-center px-4">
-          <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold mb-4 md:mb-6 tracking-tight lowercase" style={{ color: "#89CC04" }}>about</h1>
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-4 md:mb-6 tracking-tight lowercase" style={{ color: "#89CC04" }}>about</h1>
           <p className="text-lg sm:text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed lowercase" style={{ color: "#89CC04" }}>
             crafting sonic narratives that connect with audiences
           </p>
@@ -59,22 +59,8 @@ export default function AboutPage() {
           {/* Main Headline and Photo Layout */}
           <div className="mb-16 md:mb-24">
             <div className="flex flex-col lg:flex-row lg:items-start lg:gap-16 px-2 sm:px-0">
-              {/* Photo */}
-              <div className="flex justify-center lg:justify-start mb-8 lg:mb-0 lg:flex-shrink-0">
-                <div className="relative w-80 h-96 sm:w-96 sm:h-[28rem] md:w-[26rem] md:h-[30rem] rounded-3xl overflow-hidden shadow-2xl">
-                  <Image
-                    src="/images/emily-japan-photo.jpg"
-                    alt="Emily Rose Weinstein - Music Supervisor & Producer"
-                    fill
-                    className="object-cover"
-                    style={{ objectPosition: "55% 38%", transform: "scale(1.45)" }}
-                    priority
-                  />
-                </div>
-              </div>
-
-              {/* Text to the right - Improved typography with more distinct weight differences */}
-              <div className="lg:flex-1 lg:pt-4">
+              {/* Text on the left */}
+              <div className="lg:flex-1 lg:pt-4 mb-8 lg:mb-0">
                 <div className="space-y-1 md:space-y-2">
                   <h2 className="text-4xl md:text-5xl lg:text-6xl font-extralight text-teal-700 italic tracking-tight leading-[1.1]">
                     Hey there, I'm Emily.
@@ -88,6 +74,20 @@ export default function AboutPage() {
                   <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-teal-700 italic tracking-tight leading-[1.1] mt-2 md:mt-3">
                     Producer
                   </h2>
+                </div>
+              </div>
+
+              {/* Photo on the right */}
+              <div className="flex justify-center lg:justify-end lg:flex-shrink-0">
+                <div className="relative w-80 h-96 sm:w-96 sm:h-[28rem] md:w-[26rem] md:h-[30rem] rounded-3xl overflow-hidden shadow-2xl">
+                  <Image
+                    src="/images/emily-headshot.jpg"
+                    alt="Emily Rose Weinstein - Music Supervisor & Producer"
+                    fill
+                    className="object-cover"
+                    style={{ objectPosition: "center 20%" }}
+                    priority
+                  />
                 </div>
               </div>
             </div>
@@ -173,7 +173,7 @@ export default function AboutPage() {
       {/* Contact Section */}
       <section className="py-12 md:py-20" style={{ backgroundColor: "#0827F5" }}>
         <div className="max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 lowercase" style={{ color: "#89CC04" }}>ready to collaborate?</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 lowercase" style={{ color: "#89CC04" }}>ready to collaborate?</h2>
           <Link href="/contact">
             <Button
               size="lg"

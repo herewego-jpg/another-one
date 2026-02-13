@@ -231,10 +231,10 @@ export default function Home() {
         style={{ backgroundColor: "#0827F5" }}
       >
         <div className="text-center">
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-bold mb-4 md:mb-6 tracking-tight lowercase" style={{ color: "#89CC04" }}>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-4 md:mb-6 tracking-tight lowercase" style={{ color: "#89CC04" }}>
             music supervisor
           </h1>
-          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-bold mb-6 md:mb-8 tracking-tight lowercase" style={{ color: "#89CC04" }}>
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-6 md:mb-8 tracking-tight lowercase" style={{ color: "#89CC04" }}>
             & producer
           </h2>
           <p className="text-lg sm:text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed lowercase" style={{ color: "#89CC04" }}>
@@ -293,7 +293,7 @@ export default function Home() {
       {/* Contact Section */}
       <section className="py-12 md:py-20" style={{ backgroundColor: "#0827F5" }}>
         <div className="max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8 lowercase" style={{ color: "#89CC04" }}>let's create together</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 md:mb-8 lowercase" style={{ color: "#89CC04" }}>let's create together</h2>
           <Link href="/contact">
             <Button
               size="lg"
