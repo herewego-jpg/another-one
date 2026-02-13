@@ -63,11 +63,11 @@ export default function AboutPage() {
               <div className="flex justify-center lg:justify-start mb-8 lg:mb-0 lg:flex-shrink-0">
                 <div className="relative w-80 h-96 sm:w-96 sm:h-[28rem] md:w-[26rem] md:h-[30rem] rounded-3xl overflow-hidden shadow-2xl">
                   <Image
-                    src="/images/emily-japan-photo.jpg"
+                    src="/images/emily-headshot.jpg"
                     alt="Emily Rose Weinstein - Music Supervisor & Producer"
                     fill
                     className="object-cover"
-                    style={{ objectPosition: "55% 38%", transform: "scale(1.45)" }}
+                    style={{ objectPosition: "center 20%" }}
                     priority
                   />
                 </div>
