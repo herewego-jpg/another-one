@@ -44,7 +44,7 @@ const projects = [
   },
   {
     id: "spectrum-spot",
-    title: "Spectrum - It's Only Everything: Home",
+    title: "Spectrum: It's Only Everything, Home",
     description: "Spectrum commercial featuring strategic music supervision with Crosby, Stills, Nash & Young",
     category: "Commercial",
     year: "2025",
@@ -282,6 +282,7 @@ export default function Home() {
                     hlsTitle={project.title}
                     hlsLogo={project.hlsLogo}
                     adId={project.adId}
+                    adTitle={project.title}
                     startAt={project.startAt}
                   />
                 </CardContent>

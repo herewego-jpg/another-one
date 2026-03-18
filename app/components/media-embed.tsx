@@ -13,11 +13,12 @@ interface MediaEmbedProps {
   hlsTitle?: string
   hlsLogo?: string
   adId?: string
+  adTitle?: string
   startAt?: string
   className?: string
 }
 
-export function MediaEmbed({ type, videoId, postId, hlsUrl, hlsTitle, hlsLogo, adId, startAt, className = "" }: MediaEmbedProps) {
+export function MediaEmbed({ type, videoId, postId, hlsUrl, hlsTitle, hlsLogo, adId, adTitle, startAt, className = "" }: MediaEmbedProps) {
   if (type === "youtube" && videoId) {
     return <YouTubeEmbed videoId={videoId} startAt={startAt} className={className} />
   }
@@ -31,7 +32,7 @@ export function MediaEmbed({ type, videoId, postId, hlsUrl, hlsTitle, hlsLogo, a
   }
 
   if (type === "ispot" && adId) {
-    return <IspotEmbed adId={adId} className={className} />
+    return <IspotEmbed adId={adId} title={adTitle} className={className} />
   }
 
   return (
