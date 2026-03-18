@@ -281,6 +281,7 @@ export default function Home() {
                     hlsUrl={project.hlsUrl}
                     hlsTitle={project.title}
                     hlsLogo={project.hlsLogo}
+                    adId={project.adId}
                     startAt={project.startAt}
                   />
                 </CardContent>
