@@ -3,19 +3,22 @@
 import { YouTubeEmbed } from "./youtube-embed"
 import { InstagramEmbed } from "./instagram-embed"
 import { HLSVideo } from "./hls-video"
+import { IspotEmbed } from "./ispot-embed"
 
 interface MediaEmbedProps {
-  type: "youtube" | "instagram" | "hls"
+  type: "youtube" | "instagram" | "hls" | "ispot"
   videoId?: string
   postId?: string
   hlsUrl?: string
   hlsTitle?: string
   hlsLogo?: string
+  adId?: string
+  adTitle?: string
   startAt?: string
   className?: string
 }
 
-export function MediaEmbed({ type, videoId, postId, hlsUrl, hlsTitle, hlsLogo, startAt, className = "" }: MediaEmbedProps) {
+export function MediaEmbed({ type, videoId, postId, hlsUrl, hlsTitle, hlsLogo, adId, adTitle, startAt, className = "" }: MediaEmbedProps) {
   if (type === "youtube" && videoId) {
     return <YouTubeEmbed videoId={videoId} startAt={startAt} className={className} />
   }
@@ -26,6 +29,10 @@ export function MediaEmbed({ type, videoId, postId, hlsUrl, hlsTitle, hlsLogo, s
 
   if (type === "hls" && hlsUrl) {
     return <HLSVideo src={hlsUrl} title={hlsTitle} logoUrl={hlsLogo} className={className} />
+  }
+
+  if (type === "ispot" && adId) {
+    return <IspotEmbed adId={adId} title={adTitle} className={className} />
   }
 
   return (

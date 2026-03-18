@@ -15,7 +15,18 @@ const projects = [
     category: "Digital Marketing",
     year: "2024",
     type: "youtube" as const,
-    videoId: "cqBbq4Jtn3I",
+    videoId: "tGnkRNvNUVQ",
+    thumbnail: "/placeholder.svg?height=300&width=400",
+    featured: true,
+  },
+  {
+    id: "spectrum-spot",
+    title: "Spectrum: It's Only Everything, Home",
+    description: "Spectrum commercial featuring strategic music supervision with Crosby, Stills, Nash & Young",
+    category: "Commercial",
+    year: "2025",
+    type: "ispot" as const,
+    adId: "149939",
     thumbnail: "/placeholder.svg?height=300&width=400",
     featured: true,
   },
@@ -39,17 +50,6 @@ const projects = [
     year: "2024",
     type: "youtube" as const,
     videoId: "H8-P9T11IkQ",
-    thumbnail: "/placeholder.svg?height=300&width=400",
-    featured: true,
-  },
-  {
-    id: "spectrum-spot",
-    title: "Spectrum",
-    description: "Spectrum commercial featuring strategic music supervision",
-    category: "Commercial",
-    year: "2024",
-    type: "youtube" as const,
-    videoId: "8UY_8tBZRZY",
     thumbnail: "/placeholder.svg?height=300&width=400",
     featured: true,
   },
@@ -281,6 +281,8 @@ export default function Home() {
                     hlsUrl={project.hlsUrl}
                     hlsTitle={project.title}
                     hlsLogo={project.hlsLogo}
+                    adId={project.adId}
+                    adTitle={project.title}
                     startAt={project.startAt}
                   />
                 </CardContent>
