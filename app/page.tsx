@@ -49,7 +49,7 @@ const projects = [
     category: "Commercial",
     year: "2025",
     type: "ispot" as const,
-    adId: "BpfN",
+    adId: "149939",
     thumbnail: "/placeholder.svg?height=300&width=400",
     featured: true,
   },
