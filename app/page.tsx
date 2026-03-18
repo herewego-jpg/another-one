@@ -15,7 +15,7 @@ const projects = [
     category: "Digital Marketing",
     year: "2024",
     type: "youtube" as const,
-    videoId: "cqBbq4Jtn3I",
+    videoId: "tGnkRNvNUVQ",
     thumbnail: "/placeholder.svg?height=300&width=400",
     featured: true,
   },
