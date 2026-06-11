@@ -8,14 +8,15 @@ import { AnimatedMusicIcon } from "./components/animated-music-icon"
 
 const projects = [
   {
-    id: "tinder-rescue",
-    title: "Rescue | It Starts with a Swipe™",
+    id: "wegovy-new-way",
+    title: "Wegovy Super Bowl 2026 - A New Way",
     description:
-      "Tinder's heartwarming campaign showcasing real connections and meaningful relationships through strategic music supervision",
-    category: "Digital Marketing",
-    year: "2024",
-    type: "youtube" as const,
-    videoId: "tGnkRNvNUVQ",
+      "Wegovy's Super Bowl 2026 spot featuring Kenan Thompson, DJ Khaled, and Danielle Brooks with strategic music supervision",
+    category: "Commercial",
+    year: "2026",
+    type: "ispot" as const,
+    adId: "gOtT",
+    adProvider: "ispot" as const,
     thumbnail: "/placeholder.svg?height=300&width=400",
     featured: true,
   },
@@ -282,6 +283,7 @@ export default function Home() {
                     hlsTitle={project.title}
                     hlsLogo={project.hlsLogo}
                     adId={project.adId}
+                    adProvider={project.adProvider}
                     adTitle={project.title}
                     startAt={project.startAt}
                   />
