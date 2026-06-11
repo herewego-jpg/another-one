@@ -2,11 +2,17 @@
 
 interface IspotEmbedProps {
   adId: string
+  provider?: "lbb" | "ispot"
   title?: string
   className?: string
 }
 
-export function IspotEmbed({ adId, title, className = "" }: IspotEmbedProps) {
+export function IspotEmbed({ adId, provider = "lbb", title, className = "" }: IspotEmbedProps) {
+  const src =
+    provider === "ispot"
+      ? `https://www.ispot.tv/share/${adId}`
+      : `https://lbbonline.com/work/${adId}/embed?no_credits=true`
+
   return (
     <div className={`aspect-video relative ${className}`}>
       {title && (
@@ -21,7 +27,7 @@ export function IspotEmbed({ adId, title, className = "" }: IspotEmbedProps) {
       )}
       <iframe
         id={`work-with-credits-${adId}`}
-        src={`https://lbbonline.com/work/${adId}/embed?no_credits=true`}
+        src={src}
         scrolling="no"
         allowFullScreen
         className="w-full h-full border-none"
